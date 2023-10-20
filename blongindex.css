@@ -134,24 +134,25 @@ min-height: 150%;
 
 
 
-#box1 {margin-left: 13%;
+#box1 {margin-left: 195px;
 float: left;
 margin-top: 70px;}
 
 #box2{float: right;
-margin-right:  13%;
+margin-right:  195px;
 margin-top: 70px;}
 
-#box3{margin-left: 13%;
+#box3{margin-left: 190px;
 float: left;
 margin-top: px;
 
 }
 
 #box4{float: right;
-margin-right: 13%;
+margin-right: 190px;
 margin-top: px;
 }
+
 
 
 
