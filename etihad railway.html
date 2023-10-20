@@ -1,0 +1,521 @@
+<html>
+<head>
+    <title>Etihad Railway</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+    <style type="text/css">
+
+html, body {background-image:url("https://cdn.wallpapersafari.com/54/63/3LAnuP.jpg") ; 
+background-size: 100%;
+height: 100%;
+margin-top: 30px; }
+
+
+/*scroll bar css code*/
+
+::-webkit-scrollbar
+{
+
+    width:12px ;
+    
+ }
+
+::-webkit-scrollbar-thumb {
+    background: darkgray; 
+    border-radius: 6px;
+
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  
+    background:orangered;
+
+}
+
+
+/*Main Page pic and paragraph*/
+#header {text-align: center;
+color: cornsilk;
+font-size: 25px;
+font-style: oblique;
+}
+
+#pic {float: right;
+height: 370px;
+width: 330px; 
+border-radius: 35%;
+margin-top: 85px;
+margin-right: 10px;
+}
+
+.by { margin-top: 40px;
+position: relative;
+-webkit-text-stroke: 0.5px red;
+font-size: 20px;
+font-family: sans-serif;
+ }
+
+.hi {margin-right: 25%;
+margin-top: 75px;
+text-align: center;
+border-radius: 10%;
+padding: 5px; 
+padding-right: 30px;
+padding-left: 30px;
+}
+
+
+.p1 {margin-top: 10px;
+color: mistyrose;
+font-size: 18px;}
+
+#gg { 
+padding-bottom: 10px;
+text-decoration: underline;
+color: #FC9079;
+}
+
+
+
+
+
+/*hamburger css code*/
+
+.buttons  {
+opacity: 0;
+ top:5%;
+       left:55%;
+       width:5px;
+       height:5px;
+       position: absolute;
+       z-index: 2;
+}
+
+
+.contanierh {
+width: 100%;
+height: 
+background: linear-gradient(
+rgba(0, 0, 0, 0.4)
+rgba(148, 48, 48, 0.2)
+rgba(167, 67, 67, 0.4)
+),
+background-size: cover ;
+ }
+
+
+.containerh:hover {
+    opacity: 0;
+    
+}
+
+
+.hamburger-menu {
+
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.8s;
+   
+}
+hamburger-menu:click  {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.8s;    
+    opacity: 0;
+}
+
+
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: chocolate;
+    transition: all 0.8s;
+}
+
+
+
+
+.line-2:click  {
+  opacity: 0;
+}
+
+.line-3:click  {
+  opacity: 0;
+}
+
+.line-1:click  {
+  opacity: 0;
+}
+
+
+
+
+
+
+.navbar {
+    width: 300px;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    }
+
+
+
+.nav-list {
+    text-align: right;
+}
+
+.nav-item {
+     list-style: none;
+     margin: 25px;
+
+}
+
+
+.nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after {
+    bottom:0;
+    transform-origin: right;
+}
+
+.nav-link::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+/*footer*/
+
+.footer .footer-content {
+    
+    height: 350px;
+    display: flex;
+}
+
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+
+}
+
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    
+
+}
+
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+      transition: all .3s;
+      color: silver;
+
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+
+.footer .footer-content .contact-form .contact-input {
+
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem ;
+
+
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+
+.btn:hover {
+    color: white !important;
+    background: #005255;
+}
+
+ 
+    
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+
+
+  function toggleClock() {
+    // get the clock
+    var myClock = document.getElementById('div5');
+
+    // get the current value of the clock's display property
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says
+    var clockButton = document.getElementById('hamburger-menu');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'none') {
+      // clock is visible. hide it
+      myClock.style.display = 'block';
+      // change button text
+      clockButton.innerHTML = 'Show div5';
+    }
+    else {
+      // clock is hidden. show it
+      myClock.style.display = 'none';
+      // change button text
+      clockButton.innerHTML = 'Hide div5';
+    }
+  }
+</script>
+
+
+
+</head>
+<body >
+
+
+<!--$(document).ready(function(){
+$("button").click(function(){
+$("#div5").fadeToggle();   
+$("#div4").fadeToggle();
+});
+})-->
+
+
+
+<!--hamburger menu start html code-->
+<!--<button class="buttons" style="top:10%; left:85%; height:50px; width:200px;">Click to fade in/out boxes</button>-->
+<button class="buttons" style="top:10%; left:85%; height:50px; width:200px;" onclick="toggleClock()" id="clockButton">Show clock</button>
+<div id="div9">
+
+    <div  class="hamburger-menu">    
+         <div class="line line-1"></div>
+         <div class="line line-2"></div>
+         <div  class="line line-3"></div>
+    </div>
+
+       
+<div  style="display: none;" class="contanierh" id="div5">
+   
+<nav class="navbar" id="div7">
+    <div  class="hamburger-menu">    
+         <div class="line line-1"></div>
+         <div class="line line-2"></div>
+         <div  class="line line-3"></div>
+    </div>
+
+
+<br>
+<!-- <button>Click to fade in/out boxes</button><br><br> -->
+<br>
+ <div id="234" style="width:80px;height:80px;background-color:transparent;"></div>
+<br>
+<div id="324" style="width:80px;height:80px;background-color:transparent;"></div>
+<br>
+<div id="432" style="width:80px;height:80px;background-color:transparent;"></div>      
+
+ 
+<div id="div4">
+
+<ul class="nav-list">
+    
+    <li class="nav-item"> <a href="Blogindex (2).html" class="nav-link"> home </a> </li>
+
+    <li class="nav-item"> <a href="about us.html" class="nav-link"> about us </a> </li>
+
+    <li class="nav-item"> <a href="testimonials.html" class="nav-link"> testimonials </a> </li>
+
+    <li class="nav-item"> <a href="our team.html" class="nav-link"> Team </a> </li>
+    
+
+    
+     
+    <li class="nav-item"> <a href="contact us.html" class="nav-link"> contact </a> </li>
+
+</ul>
+</div>
+
+</div>
+
+</nav>
+</div>
+<!-- end of hamburger html code-->
+
+<div id="header">
+<h1> Updates on The Etihad Railway </h1>
+</div>
+
+<img id="pic" src="https://filipinotimes.net/wp-content/uploads/2022/03/Etihad-Railway.jpg"  >
+
+
+<div class="hi">
+    
+<div class="p1">
+<p  id="paragraph"  class="by"> In dignissim tortor mauris, vitae aliquet arcu egestas sed. Aenean ornare ullamcorper turpis at pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer pretium, magna sed convallis mattis, magna mi sodales tortor, non feugiat enim mi vitae dui. Donec sit amet tortor vitae eros interdum laoreet. Praesent dignissim odio vel commodo faucibus. Sed porta ullamcorper magna quis lacinia. Nunc eu cursus mauris. In interdum consectetur eleifend. Etiam dictum tristique arcu a sagittis. Aenean dui enim, venenatis id massa in, commodo mattis ligula. Vestibulum mattis interdum arcu, nec tempus ex. Nulla facilisi.In dignissim tortor mauris, vitae aliquet arcu egestas sed. Aenean ornare ullamcorper turpis at pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer pretium, magna sed convallis mattis, magna mi sodales tortor, non feugiat enim mi vitae dui. Donec sit amet tortor vitae eros interdum laoreet. Praesent dignissim odio vel commodo faucibus. Sed porta ullamcorper magna quis lacinia. Nunc eu cursus mauris. In interdum consectetur eleifend. Etiam dictum tristique arcu a sagittis. Aenean dui enim, venenatis id massa in, commodo mattis ligula. Vestibulum mattis interdum arcu, nec tempus ex. Nulla facilisi.In dignissim tortor mauris, vitae aliquet arcu egestas sed. Aenean ornare ullamcorper turpis at pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer pretium, magna sed convallis mattis, magna mi sodales tortor, non feugiat enim mi vitae dui. Donec sit amet tortor vitae eros interdum laoreet. Praesent dignissim odio vel commodo faucibus. Sed porta ullamcorper magna quis lacinia. Nunc eu cursus mauris. In interdum consectetur eleifend. Etiam dictum tristique arcu a sagittis. Aenean dui enim, venenatis id massa in, commodo mattis ligula. Vestibulum mattis interdum arcu, nec tempus ex. Nulla facilisi.
+
+</p> 
+</div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+<!--footer-->
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            
+        
+        <h1 style="color: white;" class="logo-text"><span style="color: cornsilk;">Safis</span>Blogs</h1>
+        <p> Safis blogs- a project completed by Mustafa Al-Abdullah.</p>
+
+
+     
+        </div>
+
+
+
+        <div class="footer-section links">
+        <h2 style="color: white;">Quick Links </h2>
+         <ul>
+            <a href="about us.html"><li> About Us</li></a>
+            <a href="our team.html"><li> Team</li></a>
+            <a href="contact us.html"><li> Contacts</li></a>
+            <a href="testimonials.html"><li> Testimonials</li></a>
+            <a href="terms and conditions.html"><li> Terms and Conditions </li></a>
+           
+
+
+        </ul>    
+        </div>
+
+
+
+        <div class="footer-section contact-form">
+            
+            <h2 style="color: white;"> Contact Us</h2>
+            <br>
+            <form method="post">
+            <input type="text" name="email" class="text-input contact-input"  placeholder="Your Name...">
+
+            <input type="email" name="email" class="text-input contact-input"  placeholder="Your Email adress...">
+            <br>
+ 
+            <button type="submit"  class="btn btn-big"> Send</button>
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="footer-bottom"> 
+        &copy; safiblogs.com | Designed by Mustafa Al-Abdullah
+    </div>
+</div>
+
+
+ 
+
+</body>
+</html>

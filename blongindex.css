@@ -1,0 +1,313 @@
+html, body {background-image:url("https://cdn.wallpapersafari.com/54/63/3LAnuP.jpg");
+background-size: 100%;
+height: 100%;
+margin: 0;
+}
+
+
+*{
+    margin: 0;
+}
+
+/*scroll bar css code*/
+
+::-webkit-scrollbar
+{
+    width:12px ;
+    
+ }
+
+::-webkit-scrollbar-thumb {
+    background: darkgray; 
+    border-radius: 6px;
+
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  
+    background:orangered;
+
+}
+/*header*/
+
+.header {text-align: center;
+color: cornsilk;
+font-size: 25px;
+font-style: oblique;
+width: 100%;
+height: 120px;
+display: block;
+background-color: #101010;
+}
+
+.inner-header {
+width: 1000px;
+height: 100%;
+display: block;
+margin: 0 auto;
+
+}
+
+
+.logo-contanier {
+    height: 100%;
+    display: table;
+    float: left;
+
+}
+
+.logo-contanier h1
+{
+    color: #05f7ff;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+.logo-contanier h1 span{
+    font-weight: 800;
+    color: white;
+}
+
+
+
+.navigation {
+    float: right;
+    height: 100%;
+
+}
+
+.navigation a{
+height: 100%;
+float: left;
+display: table;
+padding: 0px 20px;
+color: white;
+text-decoration: none;
+}
+
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: all 500ms;
+
+}
+
+
+.navigation a li:hover {
+    color: #05f7ff;
+    font-size:20px;
+    font-size-adjust: 10px;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+/*end of header*/
+
+
+
+
+.page-wrapper { 
+min-height: 150%;
+ }
+
+
+
+.contanier {
+    position: relative;
+    /*width: 1200px;
+    height: 300px;
+    margin:   auto;*/
+}
+
+
+
+#box1 {margin-left: 13%;
+float: left;
+margin-top: 70px;}
+
+#box2{float: right;
+margin-right:  13%;
+margin-top: 70px;}
+
+#box3{margin-left: 13%;
+float: left;
+margin-top: px;
+
+}
+
+#box4{float: right;
+margin-right: 13%;
+margin-top: px;
+}
+
+
+
+.contanier .box {
+    position: relative;
+    width: calc(576px - 30px) ;
+    height: calc(380px - 30px);
+    background: silver;
+    float: ;
+    margin: px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+    display: ;
+    transition: 0.5s;
+}
+
+
+.contanier .box .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ;
+    transition: 1s;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+
+.pic {width: calc(576px - 30px) ; 
+    height: calc(380px - 30px);}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+}
+
+.box:hover {
+
+    transform: scale(0.8);
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+.footer .footer-content {
+    
+    height: 350px;
+    display: flex;
+}
+
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    height: 350px;
+    position: relative;
+}
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+
+}
+
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    
+
+}
+
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+      transition: all .3s;
+      color: silver;
+
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+
+.footer .footer-content .contact-form .contact-input {
+
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem ;
+
+
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+
+.btn:hover {
+    color: white !important;
+    background: #005255;
+}
+
+
+
+
+.about h1{
+font-size: 25px;
+font-family: sans-serif;
+}
+.about span{
+font-size: 35px;
+font-family: sans-serif;
+}
+
+

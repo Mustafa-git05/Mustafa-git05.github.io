@@ -1,0 +1,433 @@
+<html>
+<head>
+    <title> Testimonials</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <style type="text/css">
+
+html, body {
+height: 100%;
+background-color: #191919;
+margin: 0;}
+
+
+/*scroll bar css code*/
+
+::-webkit-scrollbar
+{
+
+    width:12px ;
+    
+ }
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent ,darkgray);  
+    border-radius: 6px;
+
+
+}
+
+
+
+/*Testimonials*/
+
+.page-wrapper {
+min-height: 100vh;    
+margin: 0 auto;
+ justify-content: center;
+ align-items: center;
+ font-family: "raleway", sans-serif ;
+ color: #fff;
+
+
+}
+.page-wrapper h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 50px 0;
+    margin-left: 55px;
+    text-align: center;
+}
+
+.page-wrapper h5{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 450;
+    margin-bottom: 80px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.card{
+     
+    height: 250px;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 20px 30px;
+     position: relative;
+     background: rgba(255,255,255,0.2);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0,0.2);
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    color: #333;
+    background: #fff;
+    z-index: 10000;
+}
+
+
+
+.card img{
+    height: 90px;
+    width: 90px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.card h2{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.card h4{
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+
+/*header*/
+
+.header {text-align: center;
+color: cornsilk;
+font-size: 25px;
+font-style: oblique;
+width: 100%;
+height: 120px;
+display: block;
+background-color: #101010;
+}
+
+.inner-header {
+width: 1000px;
+height: 100%;
+display: block;
+margin: 0 auto;
+
+}
+
+
+.logo-contanier {
+    height: 100%;
+    display: table;
+    float: left;
+
+}
+
+.logo-contanier h1
+{
+    color: #05f7ff;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+.logo-contanier h1 span{
+    font-weight: 800;
+    color: white;
+}
+
+
+
+.navigation {
+    float: right;
+    height: 100%;
+
+}
+
+.navigation a{
+height: 100%;
+float: left;
+display: table;
+padding: 0px 20px;
+color: white;
+text-decoration: none;
+}
+
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: all 500ms;
+
+}
+
+
+.navigation a li:hover {
+    color: #05f7ff;
+    font-size:20px;
+    font-size-adjust: 10px;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+/*end of header*/
+
+
+
+
+
+/*footer*/
+
+.footer .footer-content {
+    
+    height: 350px;
+    display: flex;
+}
+
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+
+}
+
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    
+
+}
+
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+      transition: all .3s;
+      color: silver;
+
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+
+.footer .footer-content .contact-form .contact-input {
+
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem ;
+
+
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+
+.btn:hover {
+    color: white !important;
+    background: #005255;
+}
+
+ 
+    
+</style>
+
+
+<script type="text/javascript">
+    
+    let btnClear = document.querySelector("button");
+    let inputs = document.querySelector("input");
+
+    btnClear.addEventListener("click", ()=> {
+        inputs.forEach(input => input.value ="");
+    });
+
+
+
+</script>
+
+</head>
+<body >
+
+<!--begining of header code-->
+<div class="header">
+
+    <div class="inner-header">
+        <div class="logo-contanier">
+            <h1> Safis<span>Blogs</span></h1>
+        </div>
+            <ul class="navigation"> 
+                <a href="Blogindex (2).html" ><li> Home</li></a>
+                <a href="about us.html"><li> About Us</li></a>
+                <a href="contact us.html"><li> Contact</li></a>
+                <a href="russio ukranianwar.html" target="--"><li> Latest Blog</li></a>
+            </ul>
+
+
+    </div>
+</div>
+<!--end of header code-->
+
+<!--start of Testimonials code-->
+ <div class="page-wrapper"> 
+<h1 style="color: darkgray;">Our Happy Coustmer Testimonials</h1>
+<h5 style="color: silver;"> Check Out What They Say About Us...</h5>
+
+<div class="cards">
+    <div style="width: 420px;" class="card">
+        <img src="man face.png">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt pharetra sem, et porta augue rhoncus eget. Pellentesque mattis urna et nulla elementum pellentesque. Maecenas vehicula congue odio, ac accumsan eros viverra eu. Etiam commodo, ligula non convallis volutpat, lacus turpis efficitur eros, quis fermentum risus lacus a nisl.</p>
+        <h2> Audrey Carol</h2>
+        <h4> Regural User</h4>
+    </div>
+
+    <div style="width: 420px;"  class="card">
+        <img src="female face.png">
+        <p> Donec vehicula mollis turpis nec interdum. Mauris vitae aliquam est. Nam quis ornare neque. Duis odio est, mattis sit amet risus ac, ullamcorper faucibus diam. Integer vel faucibus nibh. Pellentesque ac ligula lorem. Nam dictum nibh sed odio laoreet consectetur tristique at est. Aenean a maximus libero. Praesent in sapien ex.</p>
+
+        <h2> Grace Fiona</h2>
+        <h4>Journalist</h4>
+    </div>
+<!--not working
+        <div style="width: 300px;"  class="card">
+        <img src="wissam.jpg">
+        <p> I have to admit this is the greatest Blog Website ever created in all of humans history. My website is nothing compared to this it sucks! I pray to god every day that one day I will be blessed with a brain as great as Mustafa's 🙏</p>
+        <h2> Wissam</h2>
+        <h4>Humpty Dumptys Cousin</h4>
+    </div>
+-->
+
+
+</div>
+</div>
+
+
+
+
+
+<!--footer-->
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            
+        
+        <h1 style="color: white;" class="logo-text"><span style="color: cornsilk;">Safis</span>Blogs</h1>
+        <p> Safis blogs- a project completed by Mustafa Al-Abdullah.</p>
+
+
+     
+        </div>
+
+
+
+        <div class="footer-section links">
+        <h2 style="color: white;">Quick Links </h2>
+         <ul>
+            <a href="about us.html"><li> About Us</li></a>
+            <a href="our team.html"><li> Team</li></a>
+            <a href="contact us.html"><li> Contacts</li></a>
+            <a href="testimonials.html"><li> Testimonials</li></a>
+            <a href="terms and conditions.html"><li> Terms and Conditions </li></a>
+           
+
+
+        </ul>    
+        </div>
+
+
+
+        <div class="footer-section contact-form">
+            
+            <h2 style="color: white;"> Contact Us</h2>
+            <br>
+            <form method="post">
+            <input type="text" name="email" class="text-input contact-input"  placeholder="Your Name...">
+
+            <input type="email" name="email" class="text-input contact-input"  placeholder="Your Email adress...">
+            <br>
+ 
+            <button type="submit"  class="btn btn-big"> Send</button>
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="footer-bottom"> 
+        &copy; safiblogs.com | Designed by Mustafa Al-Abdullah
+    </div>
+</div>
+
+
+ 
+
+</body>
+</html>
