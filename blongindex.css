@@ -158,8 +158,8 @@ margin-top: px;
 
 .contanier .box {
     position: relative;
-    width: calc(576px - 30px) ;
-    height: calc(380px - 30px);
+    width: calc(500px - 30px) ;
+    height: calc(300px - 30px);
     background: silver;
     float: ;
     margin: px;
